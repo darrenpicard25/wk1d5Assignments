@@ -4,7 +4,9 @@ const totalPop = function amountOfPopYouCanGetWithMoney (amount) {
   let bottleCaps = totalBottles;
   let earnedByBottle = 0;
   let earnedByCaps = 0;
+
   while (emptyBottles >= 2 || bottleCaps >= 4) {
+    //Recycling Bottles
     if (emptyBottles >= 2) {
       let extraBottle = Math.floor(emptyBottles/2);
       bottleCaps += extraBottle;
@@ -13,6 +15,7 @@ const totalPop = function amountOfPopYouCanGetWithMoney (amount) {
       emptyBottles -= extraBottle*2;
       emptyBottles += extraBottle;
     }
+    //Recycling Caps
     if (bottleCaps >= 4) {
       let extraBottleCapBottles = Math.floor(bottleCaps/4);
       totalBottles += extraBottleCapBottles;
@@ -22,6 +25,7 @@ const totalPop = function amountOfPopYouCanGetWithMoney (amount) {
       bottleCaps += extraBottleCapBottles;
     }
   }
+  //Printing Results
   console.log(`TOTAL BOTTLES: ${totalBottles}`);
   console.log(`REMAINING BOTTLES: ${emptyBottles}`);
   console.log(`REMAINING CAPS: ${bottleCaps}`);
