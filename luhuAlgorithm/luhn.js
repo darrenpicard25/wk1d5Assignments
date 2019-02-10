@@ -10,7 +10,6 @@ function checkIfArrayDivibleByTen (updatedArray) {
   for(let i =0; i < updatedArray.length; i++) {
     sum += updatedArray[i];
   }
-  console.log(sum);
   return (sum%10 === 0);
 }
 
@@ -32,4 +31,6 @@ function makeChangedNumberArray(accountString) {
   return doubleAccount;
 }
 
-console.log(validateAccount(79927398713));
+
+console.log(validateAccount(49927398716));
+module.exports = validateAccount;
