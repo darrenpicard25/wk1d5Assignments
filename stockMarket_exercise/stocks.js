@@ -20,4 +20,4 @@ let stocksElegant = function calculatesBiggestProfitElegantly (data) {
   //unknown at this time
 };
 
-console.log(stocks([45, 24, 35, 31, 40, 38, 11]));
+console.log(stocksBrute([45, 24, 35, 31, 40, 38, 11]));
