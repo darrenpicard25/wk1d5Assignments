@@ -15,7 +15,7 @@ function checkIfArrayDivibleByTen (updatedArray) {
 
 function makeChangedNumberArray(accountString) {
   let doubleAccount = [];
-  for (let i=0; i < accountString.length; i++) {
+  for (let i=accountString.length-1; i <= 0; i--) {
     let num = accountString[i];
     if (i%2) {
       num *= 2;
